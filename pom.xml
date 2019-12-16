@@ -100,6 +100,12 @@
 			<version>${org.projectlombok.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>javax.json.bind</groupId>
+			<artifactId>javax.json.bind-api</artifactId>
+			<version>1.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
