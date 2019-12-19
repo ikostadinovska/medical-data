@@ -26,7 +26,7 @@ To test the application reading from an input file, you can place ```doctor_repo
 
 ### Run with maven
 
-You can also run the application using maven and command ```mvn spirng-boot:run```, but be sure to change the database connection properties in the ```application.properties``` file.
+You can also run the application using maven and command ```mvn spring-boot:run```, but be sure to change the database connection properties in the ```application.properties``` file.
 
 ## Documentation
 Documentation will be available in OpenAPI format at ```/swagger-ui.html``` endpoint.
