@@ -19,6 +19,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Created by Ivana Kostadinovska on 16-Dec-19.
+ */
 @Component
 public class MedicalDataBean {
 

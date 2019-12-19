@@ -2,6 +2,7 @@ version: '3.7'
 services:
   app:
     image: ikostadinovska/medical-data:latest
+    container_name: medical-data
     ports:
       - "8080:8080"
     depends_on:
@@ -10,8 +11,11 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/db
       SPRING_DATASOURCE_USERNAME: user
       SPRING_DATASOURCE_PASSWORD: pass
+    volumes:
+    - C:\\data:/opt/data
   postgres:
     image: postgres:9.4
+    container_name: postgres-db
     volumes:
       - ./init:/docker-entrypoint-initdb.d/
     environment:

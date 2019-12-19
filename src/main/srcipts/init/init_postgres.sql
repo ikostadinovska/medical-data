@@ -1,8 +1,6 @@
-
-
 create table DOCTOR
 (
-    ID         serial    ,
+    ID         serial,
     DEPARTMENT varchar(255) not null,
     constraint DOCTOR_PK
         primary key (ID)
@@ -10,7 +8,7 @@ create table DOCTOR
 
 create table PATIENT
 (
-    ID         serial   ,
+    ID         serial,
     FIRST_NAME varchar(40) not null,
     LAST_NAME  varchar(40) not null,
     DOCTOR_ID  integer,
@@ -22,7 +20,7 @@ create table PATIENT
 
 create table DISEASE
 (
-    ID           serial    ,
+    ID           serial,
     DISEASE_NAME varchar(255) not null,
     PATIENT_ID   integer,
     constraint DISEASE_PK
@@ -34,12 +32,12 @@ create table DISEASE
 
 create table DOCUMENT_REPORT
 (
-    ID             serial   ,
+    ID             serial,
     DOCTOR_ID      integer,
     ERROR          boolean,
     ERROR_MSG      varchar(255),
     SOURCE         varchar(40) not null,
-    EXECUTION_TIME date ,
+    EXECUTION_TIME date,
     constraint DOCUMENT_REPORT_PK
         primary key (ID),
     constraint DOCUMENT_REPORT_DOCTOR_ID_FK

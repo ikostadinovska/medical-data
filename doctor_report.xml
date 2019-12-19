@@ -1,0 +1,23 @@
+<doctor id="200" department="better">
+    <patients>
+        <patient>
+            <id>8</id>
+            <first_name>Mary</first_name>
+            <last_name>Smith</last_name>
+            <diseases>
+                <disease>nice_to_people</disease>
+                <disease>long_legs</disease>
+            </diseases>
+        </patient>
+        <patient>
+            <id>2</id>
+            <first_name>Mary</first_name>
+            <last_name>Novak</last_name>
+            <diseases>
+                <disease>nice_to_people</disease>
+                <disease>long_legs</disease>
+            </diseases>
+        </patient>
+    </patients>
+</doctor>
+    

@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * Utily class
+ * Utily cla
  */
 public class FilesUtil {
 

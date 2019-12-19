@@ -1,6 +1,5 @@
 FROM fabric8/java-alpine-openjdk8-jre
 
-RUN mkdir -p /opt/data
 RUN mkdir -p /opt/data/input
 RUN mkdir -p /opt/data/output
 RUN mkdir -p /opt/data/error

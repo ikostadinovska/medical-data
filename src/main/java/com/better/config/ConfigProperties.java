@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ConfigurationProperties(prefix = "documents.folder")
 public class ConfigProperties {
-
+     
     private String input;
     private String output;
     private String error;

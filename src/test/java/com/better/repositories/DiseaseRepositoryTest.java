@@ -10,8 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest
@@ -36,5 +35,11 @@ class DiseaseRepositoryTest {
 
         assertTrue(disease.isPresent());
         assertEquals(disease.get().getDiseaseName(),"test_disease");
+    }
+
+    @Test
+    void findUnknownDisease() {
+        Optional<DiseaseEntity> disease= diseaseRepository.findById(123L);
+        assertFalse(disease.isPresent());
     }
 }

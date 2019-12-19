@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
+/**
+ * Created by Ivana Kostadinovska on 16-Dec-19.
+ */
 @Tag(name = "Medical Data Service",
         description = "Medical data service processes input data for the doctor and patients.")
 public interface MedicalDataService {
@@ -38,7 +41,7 @@ public interface MedicalDataService {
     @GetMapping(value = "/v1/doctors/{id}/patients/{patient-id}",
             produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
     ResponseEntity<Patient> getPatientDetails(@PathVariable("id") @NotNull Long id,
-                                              @PathVariable("patient-id") @NotNull Long patientId);
+                                                  @PathVariable("patient-id") @NotNull Long patientId);
 
     @GetMapping(value = "/v1/doctors/{id}/patients/{patient-id}/diseases",
             produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})

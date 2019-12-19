@@ -9,7 +9,7 @@ public class DiseaseEntity {
     private Long id;
     private String diseaseName;
     private PatientEntity patientByPatientId;
-
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
